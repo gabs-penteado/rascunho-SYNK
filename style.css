@@ -1,0 +1,108 @@
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 60vh;
+}
+
+
+.pagina {
+    display: none;
+}
+
+.pagina.ativa {
+    display: block;
+}
+
+
+.card {
+    background-color: #111;
+    border: 1px solid #444;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.card:hover {
+    border-color: #ffcc00;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    background: #111;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ffcc00;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.lista-prazos {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.prazo {
+    background: #111;
+    border: 1px solid #444;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.prazo:first-child {
+    border-left: 4px solid #ffcc00;
+}
+
+
+#search-results div {
+    background: #111;
+    border: 1px solid #444;
+    padding: 10px;
+    margin: 5px auto;
+    max-width: 400px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+    color: #666;
+    margin-top: 40px;
+}

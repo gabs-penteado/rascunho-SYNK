@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SYNK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header>
+        
+        <img src="logo.png" alt="Logo SYNK" onclick="mostrarPagina('home')" style="height: 80px; cursor: pointer;">
+        
+        
+        <nav>
+            <a href="#" onclick="mostrarPagina('home')">Início</a>
+            <a href="#" onclick="mostrarPagina('compactar')">Compactar</a>
+            <a href="#" onclick="mostrarPagina('busca')">Busca</a>
+            <a href="#" onclick="mostrarPagina('prazos')">Prazos</a>
+        </nav>
+    </header>
+
+    
+    <main>
+        
+        <div id="home" class="pagina ativa">
+            <h1>Inteligência para simplificar.</h1>
+            <p>Tudo o que você precisa em um só lugar.</p>
+            
+            <div style="display: flex; gap: 20px; justify-content: center; margin-top: 30px; flex-wrap: wrap;">
+                
+                <div class="card" onclick="mostrarPagina('compactar')">
+                    <h3>Compactar Documentos</h3>
+                    <p>Reduz arquivos</p>
+                </div>
+                
+                <div class="card" onclick="mostrarPagina('busca')">
+                    <h3>Busca Inteligente</h3>
+                    <p>Encontre o que precisa</p>
+                </div>
+                
+                <div class="card" onclick="mostrarPagina('prazos')">
+                    <h3>Controle de Prazos</h3>
+                    <p>Acompanhe datas</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="compactar" class="pagina">
+            <h1>Compactar Documentos</h1>
+            <p>Selecione um arquivo:</p>
+            <input type="file" id="file-input" style="margin-top: 20px; padding: 10px; background: #222; color: #fff; border: 1px solid #444;">
+            <p id="file-status" style="color: #ffcc00; margin-top: 15px;"></p>
+        </div>
+
+        
+        <div id="busca" class="pagina">
+            <h1>Busca Inteligente</h1>
+            <div style="margin-top: 20px;">
+                <input type="text" id="search-input" placeholder="O que você quer encontrar?">
+                <button onclick="fazerBusca()">Buscar</button>
+            </div>
+            <div id="search-results" style="margin-top: 20px;"></div>
+        </div>
+
+        
+        <div id="prazos" class="pagina">
+            <h1>Controle de Prazos</h1>
+            <div class="lista-prazos">
+                <div class="prazo">07 NOV - Entrega do relatório</div>
+                <div class="prazo">12 NOV - Revisão do contrato</div>
+                <div class="prazo">18 NOV - Finalização do projeto</div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        Tecnologia conectada à sua rotina.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
